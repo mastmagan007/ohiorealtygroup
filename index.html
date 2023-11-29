@@ -18,6 +18,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
     rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -35,11 +39,11 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between gap-5">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <h3>Ohio</h3>
-        <span>Concierge Realty Group</span>
+        <!-- <span>Concierge Realty Group</span> -->
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -54,10 +58,11 @@
               <li><a href="concierge-services.html">Concierge Services</a></li>
             </ul>
           </li>
-          <li><a href="properties.html">Properties</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="properties.html">Properties</a></li>        
         </ul>
-      </nav><!-- .navbar -->
+      </nav>
+      <!-- <a class="myBtn" href="contact.html">Contact</a> -->
+      <a href="contact.html" class="btnPrimary bg-gris"><span>Contact</span></a><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
@@ -66,14 +71,14 @@
 
   <div class="container-fluid heroSection p-0">
     <div class="heroText">
-      <h2>Ut lobortis risus, euismod malesuada.</h2>
+      <h2>Discover Your Perfect Property Today</h2>
       <p>Ohio Concierge Realty Group</p>
       <a href="home-valuation.html" class="btnPrimary bg-gris"><span>Search Homes</span></a>
     </div>
     <div class="d-flex">
-      <div class="flexItem1">
-      </div>
-      <div class="flexItem2 imageParallex" style="background: url('assets/img/hero-bg.webp');">
+      <!-- <div class="flexItem1">
+      </div> -->
+      <div class="flexItem2 imageParallex" style="background: url('assets/img/hero3.webp');">
       </div>
     </div>
   </div>
@@ -101,7 +106,7 @@
       <div class="container">
         <div class="aboutSlideHeader">
           <h2>Featured Properties</h2>
-          <h3>Ohio Concierge Realty Group</h3>
+          <!-- <h3>Ohio Concierge Realty Group</h3> -->
         </div>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -382,8 +387,8 @@
     const parallax = document.querySelectorAll('.imageParallex')
 
     new Ukiyo(parallax, {
-      scale: 1.7, // 1~2 is recommended
-      speed: 1.7, // 1~2 is recommended
+      scale: 1.2, // 1~2 is recommended
+      speed: 1.2, // 1~2 is recommended
       willChange: true,
       wrapperClass: "ukiyo-wrapper",
       externalRAF: false
