@@ -347,7 +347,10 @@ footer .logo * {
   background: #ffffff;
   padding: 30px;
 }
-
+.ukiyo-wrapper {
+    border-radius: 30px;
+    overflow: hidden;
+}
 .pageHeader .flexItem1 .ukiyo-wrapper {
   width: 100% !important;
 }
